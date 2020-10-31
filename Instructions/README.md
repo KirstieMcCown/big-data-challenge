@@ -8,7 +8,7 @@
 
 3. Inside your local git repository, create a directory for the level of challenge Challenge you choose. Use folder names corresponding to the challenges: **level-1** or  **level-2**.
 
-4. Add your converted ZEPL notebook to this folder. This will be the main script to run for analysis. Be sure to also add any SQL queries you used to a `.sql` file and add it to your repo.
+4. Add your converted Colab notebook to this folder. This will be the main script to run for analysis. Be sure to also add any SQL queries you used to a `.sql` file and add it to your repo.
 
 5. Push the above changes to GitHub or GitLab.
 
@@ -33,7 +33,7 @@ There are two levels to this homework assignment. The second level is optional b
 
 * Use the furnished schema to create tables in your RDS database.
 
-* Create two separate ZEPL notebooks and **extract** any two datasets from the list at [review dataset](https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt), one into each notebook.
+* Create two separate Colab notebooks and **extract** any two datasets from the list at [review dataset](https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt), one into each notebook.
 
   **Note:** It is possible to ETL both data sources in a single notebook, but due to the large data sizes, it will be easier to work with these S3 data sources in two separate ZEPL notebooks.
 
@@ -57,7 +57,7 @@ Amazon has several policies to reduce the bias of its Vine reviews: [https://www
 
 But are Vine reviews truly trustworthy? Your task is to investigate whether Vine reviews are free of bias. Use either PySpark or—for an extra challenge—SQL to analyze the data.
 
-* If you choose to use SQL, first use Spark on ZEPL to extract and transform the data and load it into a SQL table on your RDS account. Perform your analysis with SQL queries on RDS.
+* If you choose to use SQL, first use Spark on Colab to extract and transform the data and load it into a SQL table on your RDS account. Perform your analysis with SQL queries on RDS.
 
 * While there are no hard requirements for the analysis, consider steps you can take to reduce noisy data, e.g., filtering for reviews that meet a certain number of helpful votes, total votes, or both.
 
@@ -69,19 +69,10 @@ But are Vine reviews truly trustworthy? Your task is to investigate whether Vine
 
 [customer review datasets](https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt)
 
-- - -
-
-## Hints and Considerations
-
-* Consult the troubleshooting guide for handling issues with ZEPL.
-
-* Be sure that every cell begins with `%pyspark` in ZEPL. This specifies the interpreter, and you must have one for each cell. If you import a Jupyter notebook in ZEPL, be sure to delete `%python`, which is automatically added to each cell.
-
-- - -
 
 ## Submission
 
-* Copy your ZEPL notebooks into Jupyter Notebooks and upload those to GitHub.
+* Copy your Colab notebooks into Jupyter Notebooks and upload those to GitHub.
 
 * Copy your SQL queries into `.sql` files and upload to GitHub.
 
