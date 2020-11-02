@@ -1,5 +1,5 @@
 # Big Data Challenge - - "Alexa, can you handle big data?"
-![Header](images/header.jpg)<br>
+![Header](Images/header.jpg)<br>
 
 Welcome to my project repo! 
 Feel free to take a look around the repo folders!<br>
