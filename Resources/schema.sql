@@ -28,3 +28,8 @@ CREATE TABLE vine_table (
 );
 
 
+-- Customer table for second data set
+CREATE TABLE jewellerycustomers (
+  customer_id INT PRIMARY KEY NOT NULL UNIQUE,
+  customer_count INT
+);
